@@ -1,4 +1,3 @@
-> Сорокин:
 import os
 import asyncio
 from datetime import datetime
@@ -145,9 +144,7 @@ async def help_cmd(msg: Message):
         "/case Заголовок — создать дело\n"
         "/event ID|Описание — добавить событие\n"
         "/timeline ID — таймлайн по делу\n"
-
-> Сорокин:
-"/registry Название — поиск в открытых реестрах\n"
+        "/registry Название — поиск в открытых реестрах\n"
         "/agency — пример запроса к ведомственному API\n"
         "/analyze Текст — анализ протокола\n"
         "/match Текст1|Текст2 — сравнение документов\n"
