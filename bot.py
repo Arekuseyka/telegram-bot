@@ -1,23 +1,14 @@
-import os
-import asyncio
 from aiogram import Bot, Dispatcher
-from aiogram.types import Message
-from aiogram.filters import Command
+import asyncio
+import os
 
 TOKEN = os.getenv("BOT_TOKEN")
-
 bot = Bot(TOKEN)
-dp = Dispatcher()
-
-@dp.message(Command("start"))
-async def start(msg: Message):
-    await msg.answer("Бот работает ✅")
-
-@dp.message(Command("help"))
-async def help_cmd(msg: Message):
-    await msg.answer("Команды: /start /help")
+dp = Dispatcher(bot)
 
 async def main():
-    await dp.start_polling(bot)
+    print("Бот стартует")
+    await asyncio.sleep(5)
+    print("Бот завершает работу")
 
 asyncio.run(main())
