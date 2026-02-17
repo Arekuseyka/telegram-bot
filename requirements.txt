@@ -1,1 +1,4 @@
 aiogram
+aiosqlite
+networkx
+python-dotenv
